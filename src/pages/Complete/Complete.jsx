@@ -6,7 +6,7 @@ import Progressbar from "../../Components/ProgressBar/Progressbar";
 const Complete = () => {
   return (
     <div className="complete-page">
-      <Progressbar />
+      <Progressbar page="pagethree" />
       <div className="complete-page-main">
         <div className="complete-page--left">
           <div className="header__logo-wrapper">
