@@ -21,17 +21,17 @@ export default function CreateAccount() {
           </div>
 
           <form className="book-form">
-            <label className="book-form__label">FIRST NAME</label>
+            <label className="book-form__label">John</label>
             <input className="book-form__input" type="text" />
           </form>
 
           <form className="book-form">
-            <label className="book-form__label">LAST NAME</label>
+            <label className="book-form__label">Doe</label>
             <input className="book-form__input" type="text" />
           </form>
 
           <form className="book-form">
-            <label className="book-form__label">EMAIL</label>
+            <label className="book-form__label">johndoe@gmail.com</label>
             <input className="book-form__input" type="text" />
           </form>
 
