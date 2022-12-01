@@ -26,7 +26,7 @@ export default function CreateAccount() {
   return (
     <div>
       <div className="create-primary-container">
-        <Progressbar page="thirdpage" />
+        <Progressbar page="pagethree" />
         <div>
           <div>
             <img src={logo} alt="logo-black" />
