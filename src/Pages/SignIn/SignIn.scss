@@ -4,4 +4,27 @@
 .SignIn {
     display: flex;
     font-family:'Circular Std', sans-serif ;
+    margin-top: 2rem;
+
+    &__primary-block {
+        width: 50%;
+    }
+
+    &__form-block {
+        background-color: $blue;
+        color: $white;
+        border-radius: 10px;
+        margin-left: 8rem;
+        padding-top: 1rem;
+        padding-left: 2rem;
+    }
+    &__primary-text {
+        font-weight: 500;
+        font-size: 26px;
+        width: 80%;
+    }
+    &__secondary-text {
+        width: 85%;
+        font-weight: light;
+    }
 }
