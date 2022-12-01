@@ -1,6 +1,6 @@
 import "./App.scss";
 // import Home from "./pages/Home";
-import Book from "./pages/Book";
+import Complete from "./pages/Complete/Complete";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           {/* <Route path="/home" element={Home}></Route> */}
-          <Route path="/book" element={<Book />}></Route>
+          <Route path="/complete" element={<Complete />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

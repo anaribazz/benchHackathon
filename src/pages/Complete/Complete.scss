@@ -1,6 +1,6 @@
-@import "../Style/variables";
+@import "../../Style/variables";
 
-.book-page {
+.complete-page {
     margin: 2rem auto;
     max-width: 65%;
 }
@@ -28,9 +28,10 @@
 
 .progress-bar {
     display: flex;
-    gap: 4rem;
+    gap: 10rem;
     position: relative;
     width: fit-content;
+    margin: 0 auto 2rem;
     &::before {
         content: "";
         position: absolute;
@@ -73,60 +74,9 @@
         justify-content: center;
     }
 }
-.lower-wrapper {
+.button-wrapper {
     display: flex;
     margin-top: 4rem;
-}
-.book-form {
-    flex:1;
-    &__label {
-        color: $dark-font;
-        margin: 0.5rem 0;
-        text-transform: uppercase;
-    }
-    &__company-name {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1rem;
-        &-input {
-            background-color: rgb(247, 248, 250);
-            border: 1px solid rgb(228, 230, 233);
-            border-radius: 8px;
-            padding: 1rem;
-        }
-    }
-    &__phone {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1rem;
-        &-input {
-            background-color: rgb(247, 248, 250);
-            border: 1px solid rgb(228, 230, 233);
-            border-radius: 8px;
-            padding: 1rem;
-        } 
-    }
-    &__country {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1rem;
-        &-list {
-            background-color: rgb(247, 248, 250);
-            border: 1px solid rgb(228, 230, 233);
-            border-radius: 8px;
-            padding: 1rem;
-        }
-    }
-    &__timezone {
-        display: flex;
-        flex-direction: column;
-        &-list {
-            background-color: rgb(247, 248, 250);
-            border: 1px solid rgb(228, 230, 233);
-            border-radius: 8px;
-            padding: 1rem;
-        }   
-    }
 }
 .aside-image {
     flex:1;
