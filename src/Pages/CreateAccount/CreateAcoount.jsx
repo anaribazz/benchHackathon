@@ -69,7 +69,6 @@ export default function CreateAccount() {
             <div className="create-image">
               <img src={createImage} alt="book-image" />
             </div>
-
             <div className="term-container">
               <p>
                 By signing up you accept our
