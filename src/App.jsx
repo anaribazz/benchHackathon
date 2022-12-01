@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
-import SignIn from "./Pages/SignIn/SignIn";
+import SignIn from "./pages/SignIn/SignIn";
 import Complete from "./pages/Complete/Complete";
 
 function App() {

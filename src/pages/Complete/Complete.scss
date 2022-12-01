@@ -1,37 +1,22 @@
 @import "../../Style/variables";
 
 .complete-page {
-    margin: 2rem auto;
-    max-width: 65%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    max-width: 75%;
+    height: 100vh;
+    position: relative;
 }
-
-.header__logo-wrapper {
-    margin-bottom: 1rem;
+.complete-page-main {
+    display: flex;
+    flex-wrap: nowrap;
 }
-.header__logo {
-    height: 35px;
-}
-.greeting {
-    &__container {
-        margin-bottom: 4rem;
-    }
-    &__title {
-        font-size: 1.75rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
-    }
-    &__text {
-     font-size: 1rem;  
-     font-weight: 300; 
-    }
-}
-
 .progress-bar {
     display: flex;
     gap: 10rem;
     position: relative;
     width: fit-content;
-    margin: 0 auto 2rem;
+    margin: 1rem auto 5rem;
     &::before {
         content: "";
         position: absolute;
@@ -74,22 +59,81 @@
         justify-content: center;
     }
 }
-.button-wrapper {
-    display: flex;
-    margin-top: 4rem;
+.header__logo-wrapper {
+    margin-bottom: 1rem;
 }
-.aside-image {
-    flex:1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.header__logo {
+    height: 35px;
 }
-.image {
-    background-color: black;
-    width: 300px;
-    height: 200px;
-    color: white;
+.greeting {
+    &__container {
+        margin-bottom: 4rem;
+    }
+    &__title {
+        font-size: 1.75rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    &__text {
+     font-size: 1rem;  
+     font-weight: 300; 
+    }
+}
+.prompts-container {
     display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.prompt {
+    font-size: 0.9rem;
+}
+.complete-page--right {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 4rem;
+}
+.value__statement {
+        background-color: $light-green;
+        padding: 2rem;
+        border-radius: 15px 15px 0 15px;
+        max-width: 500px;
+}
+.complete-page-img {
+    width: 400px;
+    height: 250px;
+}
+
+.buttons-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 1rem;
+    gap: 1rem;
+}
+.cta-dashboard-button {
+    border: 2px solid $light-blue;
+    background-color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    color: $light-blue;
+    text-transform: uppercase;
+}
+.cta-chat-button {
+    border: 2px solid $light-blue;
+    background-color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    color: $light-blue;
+    text-transform: uppercase;
+}
+.cta-link-button {
+    border: 2px solid $light-blue;
+    background-color: $light-blue;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    color: $white;
+    text-transform: uppercase;
 }
