@@ -1,15 +1,15 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
-// import Home from "./pages/Home";
+import SignIn from "./Pages/SignIn/SignIn";
 import Complete from "./pages/Complete/Complete";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <BrowserRouter>
         <Routes>
-          {/* <Route path="/home" element={Home}></Route> */}
-          <Route path="/complete" element={<Complete />}></Route>
+          <Route path="/" element={<SignIn />} />
+          <Route path="/complete" element={<Complete />} />
         </Routes>
       </BrowserRouter>
     </div>
