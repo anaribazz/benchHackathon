@@ -52,27 +52,46 @@ function SignIn() {
             you set up, quick.
           </p>
         </div>
-        <div className="SignIn__text-container">
-          <h2 className="SignIn__header2">Full access to all features of the Bench platform</h2>
-          <p className="SignIn__subheader2">
-            You'll see first-hand how intuitive reports and real human
-            bookkeepers take the stress out of tedious financial admin.
-          </p>
-        </div>
-        <div className="SignIn__text-container">
-          <h2 className="SignIn__header2">A free month of bookkeeping</h2>
-          <p className="SignIn__subheader2">
-            We will do one prior month of your bookkeeping in one business day,
-            and prepare a set of financial statements for you to keep.
-          </p>
-        </div>
-        <div className="SignIn__third-block">
+        <div className="SignIn__secondary-block">
+          <h1 className="SignIn__secondary-title">
+            What you get from the call
+          </h1>
+          <div className="SignIn__text-container">
+            <h2 className="SignIn__header2">
+              A personalized walkthrough with a small business expert
+            </h2>
+            <p className="SignIn__subheader2">
+              We will get to know your business, show you how Bench works, and
+              get you set up, quick.
+            </p>
+          </div>
+          <div className="SignIn__text-container">
+            <h2 className="SignIn__header2">
+              Full access to all features of the Bench platform
+            </h2>
+            <p className="SignIn__subheader2">
+              You'll see first-hand how intuitive reports and real human
+              bookkeepers take the stress out of tedious financial admin.
+            </p>
+          </div>
+          <div className="SignIn__text-container">
+            <h2 className="SignIn__header2">A free month of bookkeeping</h2>
+            <p className="SignIn__subheader2">
+              We will do one prior month of your bookkeeping in one business
+              day, and prepare a set of financial statements for you to keep.
+            </p>
+          </div>
+          <div className="SignIn__third-block">
             <p className="SignIn__dummy">line</p>
-            <p className="SignIn__third-block-text">"Bench helped me replace QuickBooks, and save about 6 hours per month of horrible accounting work, which is priceless."</p>
-            <img  className='SignIn__avatar' src={avatar} alt='avatar'/>
+            <p className="SignIn__third-block-text">
+              "Bench helped me replace QuickBooks, and save about 6 hours per
+              month of horrible accounting work, which is priceless."
+            </p>
+            <img className="SignIn__avatar" src={avatar} alt="avatar" />
+          </div>
         </div>
       </div>
-        </div>
+      <Footer />
     </div>
   );
 }
