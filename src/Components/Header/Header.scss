@@ -1,15 +1,14 @@
-@use 'src/Style/_variables.scss' as *;
+@use "src/Style/_variables.scss" as *;
 
 .Header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 4rem;
-    z-index: 1;
-    background-color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  z-index: 1;
+  background-color: $white;
 
-    &__logo {
-        height: 3rem;
-
-    }
+  &__logo {
+    height: 3rem;
+  }
 }
