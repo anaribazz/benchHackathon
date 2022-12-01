@@ -1,9 +1,12 @@
-import "../Footer/Footer.scss";
+import './Header.scss';
+import logo from '../../Assets/Images/bench.png';
 
-export default function Header() {
-  return (
-    <div>
-      <div></div>
-    </div>
-  );
+function Header () {
+    return(
+        <div className='Header'>
+            <img className='Header__logo' src={logo}/>
+        </div>
+    )
 }
+
+export default Header;
