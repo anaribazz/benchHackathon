@@ -1,5 +1,8 @@
+@import "../Style/variables";
+
 .book-page {
-    margin: 2rem 5rem;
+    margin: 2rem auto;
+    max-width: 65%;
 }
 
 .header__logo-wrapper {
@@ -8,7 +11,135 @@
 .header__logo {
     height: 35px;
 }
-.greeting__text {
-    font-size: 0.7rem;
-    font-weight: 300;
+.greeting {
+    &__container {
+        margin-bottom: 4rem;
+    }
+    &__title {
+        font-size: 1.75rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    &__text {
+     font-size: 1rem;  
+     font-weight: 300; 
+    }
+}
+
+.progress-bar {
+    display: flex;
+    gap: 4rem;
+    position: relative;
+    width: fit-content;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY((-50%));
+        height: 4px;
+        width: 100%;
+        background-color: $silver;
+    }
+    &__step1 {
+        background-color: $silver;
+        color:$dark-font;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        background-color: $blue;
+    }
+    &__step2 {
+        background-color: $silver;
+        color:$dark-font;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__step3 {
+        background-color: $silver;
+        color:$dark-font;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.lower-wrapper {
+    display: flex;
+    margin-top: 4rem;
+}
+.book-form {
+    flex:1;
+    &__label {
+        color: $dark-font;
+        margin: 0.5rem 0;
+        text-transform: uppercase;
+    }
+    &__company-name {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        &-input {
+            background-color: rgb(247, 248, 250);
+            border: 1px solid rgb(228, 230, 233);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+    }
+    &__phone {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        &-input {
+            background-color: rgb(247, 248, 250);
+            border: 1px solid rgb(228, 230, 233);
+            border-radius: 8px;
+            padding: 1rem;
+        } 
+    }
+    &__country {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        &-list {
+            background-color: rgb(247, 248, 250);
+            border: 1px solid rgb(228, 230, 233);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+    }
+    &__timezone {
+        display: flex;
+        flex-direction: column;
+        &-list {
+            background-color: rgb(247, 248, 250);
+            border: 1px solid rgb(228, 230, 233);
+            border-radius: 8px;
+            padding: 1rem;
+        }   
+    }
+}
+.aside-image {
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.image {
+    background-color: black;
+    width: 300px;
+    height: 200px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -17,38 +17,51 @@ const Book = () => {
           we’ll get in touch ASAP to get started.
         </p>
       </div>
-      <form className="book-form">
-        <div className="book-form__company-name">
-          <label className="book-form__label">company name</label>
-          <input className="book-form__company-name-input" type="text"></input>
+      <div className="progress-bar">
+        <div className="progress-bar__step1"></div>
+        <div className="progress-bar__step2"></div>
+        <div className="progress-bar__step3"></div>
+      </div>
+      <div className="lower-wrapper">
+        <form className="book-form">
+          <div className="book-form__company-name">
+            <label className="book-form__label">company name</label>
+            <input
+              className="book-form__company-name-input"
+              type="text"
+            ></input>
+          </div>
+          <div className="book-form__phone">
+            <label className="book-form__label">phone number</label>
+            <input
+              className="book-form__phone-input"
+              type="tel"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            ></input>
+          </div>
+          <div className="book-form__country">
+            <label className="book-form__label">country</label>
+            <select className="book-form__country-list">
+              <option>United States</option>
+              <option>Canada</option>
+            </select>
+          </div>
+          <div className="book-form__timezone">
+            <label className="book-form__label">time zone</label>
+            <select className="book-form__timezone-list">
+              <option>Pacific</option>
+              <option>Moutain</option>
+              <option>Central</option>
+              <option>Eastern</option>
+              <option>Atlantic</option>
+              <option>Hawaii</option>
+            </select>
+          </div>
+        </form>
+        <div className="aside-image">
+          <div className="image"><p>placeholder text</p></div>
         </div>
-        <div className="book-form__phone">
-          <label className="book-form__label">phone number</label>
-          <input
-            className="book-form__phone-input"
-            type="tel"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-          ></input>
-        </div>
-        <div className="book-form__country">
-          <label className="book-form__label">country</label>
-          <select>
-            <option>United States</option>
-            <option>Canada</option>
-          </select>
-        </div>
-        <div className="book-form__timezone">
-          <label className="book-form__label">time zone</label>
-          <select>
-            <option>Pacific</option>
-            <option>Moutain</option>
-            <option>Central</option>
-            <option>Eastern</option>
-            <option>Atlantic</option>
-            <option>Hawaii</option>
-          </select>
-        </div>
-      </form>
+      </div>
     </div>
   );
 };
