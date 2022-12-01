@@ -1,0 +1,68 @@
+@use "src/Style/_variables.scss" as *;
+@use "src/Style/_font.scss" as *;
+
+.InfoPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+&__main {
+    display: flex;
+    flex-direction: row;
+}
+  &__box-primary {
+    width: 50%;
+    
+  }
+  &__text-box {
+    height: 500px;
+    background-color: $blue;
+    color: $white;
+    border-radius: 10px;
+    margin-left: 8rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+  &__box-header-text {
+    font-family: "Circular Medium Std", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-size: 42px;
+    width: 80%;
+  }
+  &__box-subheader-text {
+    font-family: 'Circular Std', sans-serif;;
+        width: 85%;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 30px;
+    
+  }
+
+  &__secondary-box {
+    width: 50%;
+  }
+  &__img-box {
+    margin-left: 2rem;
+    margin-top: 12rem;
+    width: 80%;
+  }
+
+  &__third-block {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__third-block-text {
+    display: flex;
+    background-color: #F4BE6D;
+    color: #2F3034;
+    width: 593px;
+    font-weight: 600;
+    height: 110px;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 4rem;
+  }
+}
