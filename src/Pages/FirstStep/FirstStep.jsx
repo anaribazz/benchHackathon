@@ -7,7 +7,9 @@ function FirstStep() {
   return (
 
     <div className="FirstStep">
-        <Progressbar />
+        <Progressbar  />
+        <div className="FirstStep__block">
+
       <div className="FirstStep__main-container">
         <div className="FirstStep__main-container-block">
           <img
@@ -65,8 +67,6 @@ function FirstStep() {
             <label className="FirstStep__label">Select most recent business income tax filing</label>
             <select
               className="FirstStep__form-input"
-              name="email"
-              type="email"
               placeholder="Select"
             >
                 <option>Select</option>
@@ -83,6 +83,7 @@ function FirstStep() {
             <div>
                 <img className='FirstStep__secondary-image'src={page2} alt='First Step main image'/>
             </div>
+        </div>
       </div>
     </div>
   );
