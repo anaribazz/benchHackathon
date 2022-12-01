@@ -4,6 +4,7 @@ import createImage from "../../Assets/Images/create-image.png";
 import arrowRight from "../../Assets/Images/ArrowRight.svg";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Progressbar from "../../Components/ProgressBar/Progressbar";
 
 export default function CreateAccount() {
   const nav = useNavigate();
@@ -24,7 +25,8 @@ export default function CreateAccount() {
   };
   return (
     <div>
-      <div className="primary-container">
+      <div className="create-primary-container">
+        <Progressbar page="thirdpage" />
         <div>
           <div>
             <img src={logo} alt="logo-black" />

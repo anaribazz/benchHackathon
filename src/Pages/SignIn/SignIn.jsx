@@ -28,7 +28,7 @@ function SignIn() {
                   type="email"
                   placeholder="Email"
                 />
-                <Link to="/company-details">
+                <Link to="/firststep">
                   <button className="SignIn__form-btn" type="submit">
                     Start a free trial
                   </button>
