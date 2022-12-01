@@ -1,6 +1,7 @@
 import "./SignIn.scss";
 import Header from "../../Components/Header/Header";
 import pageImage from "../../Assets/Images/page1-img.png";
+import { Link } from "react-router-dom";
 
 function SignIn() {
   return (
@@ -27,9 +28,11 @@ function SignIn() {
                   type="email"
                   placeholder="Email"
                 />
-                <button className="SignIn__form-btn" type="submit">
-                  Start a free trial
-                </button>
+                <Link to="/company-details">
+                  <button className="SignIn__form-btn" type="submit">
+                    Start a free trial
+                  </button>
+                </Link>
               </form>
               <p className="SignIn__subtext">
                 No credit card required. By clicking ‘Start a Free Trial’, I
@@ -47,7 +50,6 @@ function SignIn() {
         </div>
       </div>
     </div>
-    
   );
 }
 
