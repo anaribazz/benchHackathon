@@ -19,12 +19,142 @@
         padding-left: 2rem;
     }
     &__primary-text {
+        font-family: 'Circular Medium Std', sans-serif;
         font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 30px;
         font-size: 26px;
         width: 80%;
     }
     &__secondary-text {
         width: 85%;
-        font-weight: light;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 26px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        padding-top: .7rem;
+        padding-bottom: 1rem;
+        gap: 8px;
+    }
+
+    &__input {
+        width: 70%;
+        height: 3.5rem;
+        border-radius: 5px;
+        border: none;
+    }
+
+    &__input::placeholder{
+        padding-left: 1rem;
+    }
+
+    &__form-btn {
+        font-family: 'Circular Std', sans-serif;
+        font-weight: 300;
+        background-color: $green;
+        color: $white;
+        width: 71%;
+        height: 3.5rem;
+        border-radius: 5px;
+        border: none;
+        font-size: 1rem;
+    }
+
+    &__subtext {
+        width: 70%;
+        line-height: 22px;
+        letter-spacing: 1px;
+        font-size: 12px;
+        color: #3B5171;
+        padding-bottom: 1rem;
+    }
+    &__sign-link {
+        font-family: 'Circular Std', sans-serif;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 20px;
+        padding-bottom: 4rem;
+        color: $white;
+    }
+    &__link {
+        color: $green;
+    }
+
+    &__secondary-block {
+        width: 50%;
+    }
+    &__secondary-title {
+        font-family: 'Circular Medium Std', sans-serif;
+        padding-top: 1rem;
+        color: #2F3034;
+        line-height: 24px;
+        margin-left: 8rem;
+        font-size: 24px;
+        letter-spacing: .5px;
+    }
+
+    &__text-container {
+        margin-left: 8rem;
+        width: 65%;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    &__header2{
+        color:#4A4B4E;
+        letter-spacing: .5px;
+        font-size: 15px;
+        margin: 0;
+        padding-bottom: 6px;
+    
+    }
+    &__subheader2 {
+        font-family: 'Circular Std', sans-serif;
+        font-size: .95rem;
+        font-weight: 400;
+        color: #4A4B4E;
+        line-height: 1.2rem;
+        padding: 0;
+        margin: 0;
+        letter-spacing: .5px;
+    }
+
+    &__third-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 2rem;
+    }
+
+    &__dummy {
+        color: white;
+        width: 30%;
+        border-bottom: 2px solid $yellow;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    &__third-block-text {
+        font-family: 'Circular Std', sans-serif;
+        margin-left: 8rem;
+        width: 65%;
+        font-size: .95rem;
+        font-weight: 400;
+        color: #4A4B4E;
+        line-height: 1.5rem;
+        padding-top: 2rem;
+        margin: 0;
+        letter-spacing: .5px;
+
+    }
+    &__avatar {
+        height: 100px;
+        align-self: flex-start;
+        padding-top: 1rem;
+        margin-left: 7rem;
+        
     }
 }
