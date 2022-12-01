@@ -22,14 +22,8 @@
     &__container {
         margin-bottom: 4rem;
     }
-    &__title {
-        font-size: 1.75rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
-    }
-    &__text {
-     font-size: 1rem;  
-     font-weight: 300; 
+    &__image {
+        width: 450px;
     }
 }
 .prompts-container {
@@ -54,11 +48,11 @@
         max-width: 500px;
 }
 .complete-page-img {
-    width: 400px;
-    height: 250px;
+    width: 450px;
 }
 
 .buttons-wrapper {
+    margin-top: 2rem;
     width: 100%;
     display: flex;
     justify-content: flex-end;
