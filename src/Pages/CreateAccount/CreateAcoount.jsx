@@ -39,6 +39,15 @@ export default function CreateAccount() {
             <label className="book-form__label">PASSWORD</label>
             <input className="book-form__input" type="text" />
           </form>
+
+          <div className="term-container">
+            <p>
+              By signing up you accept our
+              <a className="create-term" href="">
+                End User License Agreement and Terms of Service.
+              </a>
+            </p>
+          </div>
         </div>
 
         <div className="create-image">
