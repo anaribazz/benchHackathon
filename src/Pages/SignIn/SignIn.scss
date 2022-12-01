@@ -1,5 +1,7 @@
 @use 'src/Style/_variables.scss' as *;
+@use 'src/Style/_font.scss' as *;
 
 .SignIn {
     display: flex;
+    font-family:'Circular Std', sans-serif ;
 }
