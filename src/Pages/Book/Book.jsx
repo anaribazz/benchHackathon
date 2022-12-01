@@ -3,10 +3,12 @@ import logo from "../../Assets/Images/logo-black.svg";
 import bookImage from "../../Assets/Images/book-page-image.png";
 import arrowRight from "../../Assets/Images/ArrowRight.svg";
 import { Link } from "react-router-dom";
+import Progressbar from "../../Components/ProgressBar/Progressbar";
 
 export default function Book() {
   return (
-    <div>
+    <div className="book-page">
+      <Progressbar page="pagetwo" />
       <div className="primary-container">
         <div>
           <div>
@@ -43,21 +45,23 @@ export default function Book() {
         </div>
 
         <div className="book-image">
-          <img src={bookImage} alt="book-image" />
+          <img src={bookImage} alt="book-image" className="image" />
         </div>
       </div>
 
-      <div className="book-btn">
-        <Link to="/create-account" className="book-btn__link">
-          <div className="book-btn__text">
-            NEXT
-            <img
-              className="book-btn__arrow"
-              src={arrowRight}
-              alt="arrow-right"
-            />
-          </div>
-        </Link>
+      <div className="book-btn-wrapper">
+        <div className="book-btn">
+          <Link to="/create-account" className="book-btn__link">
+            <div className="book-btn__text">
+              NEXT
+              <img
+                className="book-btn__arrow"
+                src={arrowRight}
+                alt="arrow-right"
+              />
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
   );

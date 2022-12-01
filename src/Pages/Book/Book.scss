@@ -1,6 +1,14 @@
 @use "src/Style/_variables.scss" as *;
 @use "src/Style/_font.scss" as *;
 
+
+.book-page {
+  padding: 2rem 0;
+  margin: 0 auto;
+  max-width: 75%;
+  height: 100vh;
+  width: 100vw;
+}
 .primary-container {
   display: flex;
   justify-content: space-around;
@@ -35,7 +43,7 @@
   &__input {
     font-family: "Circular", sans-serif;
     font-size: 1.2rem;
-    height: 3.75rem;
+    height: 3.3rem;
     background: #f7f8fa;
     border: 0.0625rem solid #e4e6e9;
     border-radius: 0.3125rem;
@@ -44,15 +52,22 @@
 }
 
 .book-image {
-  padding-top: 10rem;
+display: flex;
+justify-content: center;
+align-items: center;
 }
-
+.image {
+  width: 400px;
+}
+.book-btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
 .book-btn {
   background: #0a5ac2;
   width: 10rem;
   border-radius: 0.6125rem;
-  margin-left: 61rem;
-  margin-top: 5rem;
+  margin: 2rem 8rem 0 0;
 
   &__link {
     text-decoration: none;
