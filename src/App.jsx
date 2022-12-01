@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
-import SignIn from "./pages/SignIn/SignIn";
-import Complete from "./pages/Complete/Complete";
+import SignIn from "./Pages/SignIn/SignIn";
+import Book from "./Pages/Book/Book";
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<SignIn />} />
+          <Route path="/book" element={<Book />} />
           <Route path="/complete" element={<Complete />} />
         </Routes>
       </BrowserRouter>
