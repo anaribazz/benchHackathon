@@ -1,10 +1,13 @@
 import "./FirstStep.scss";
 import benchLogo from "../../Assets/Images/bench-logo-vector.svg";
 import page2 from "../../Assets/Images/page2.png";
+import Progressbar from "../../Components/ProgressBar/Progressbar";
 
 function FirstStep() {
   return (
+
     <div className="FirstStep">
+        <Progressbar />
       <div className="FirstStep__main-container">
         <div className="FirstStep__main-container-block">
           <img
