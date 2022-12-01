@@ -1,6 +1,7 @@
 import "./SignIn.scss";
 import InfoPage from "../InfoPage/InfoPage";
 import avatar from '../../Assets/Images/ceoAvatar.png';
+import Footer  from "../../Components/Footer/Footer.jsx";
 
 function SignIn() {
   return (
@@ -34,8 +35,8 @@ function SignIn() {
             </button>
           </form>
           <p className="SignIn__subtext">
-            No credit card required. By clicking ‘Start a Free Trial’, I agree
-            to Bench’s Terms & Privacy Policy.
+            `No credit card required. By clicking ‘Start a Free Trial’, I agree
+            to Bench’s Terms & Privacy Policy.`
           </p>
           <p className="SignIn__sign-link">
             Already have an account?{" "}
@@ -92,6 +93,7 @@ function SignIn() {
         </div>
       </div>
       <Footer />
+    </div>
     </div>
   );
 }

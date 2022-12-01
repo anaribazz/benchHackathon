@@ -1,0 +1,56 @@
+.FirstStep {
+    display: flex;
+    &__main-container {
+        width: 50%;
+        
+    }
+    &__main-logo {
+        height: 2rem;
+    }
+    &__main-title {
+       font-family: 'Circular Medium Std', sans-serif;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 30px;
+        font-size: 26px;
+        width: 80%;
+    }
+
+    &__container-form {
+        display: flex;
+        flex-direction: column;
+}
+&__title {
+    font-family: 'Circular Std', sans-serif ;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+&__label {
+    font-family: 'Circular Std', sans-serif ;
+    color: #E4E6E9;
+    padding-bottom: 4px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+&__form-input {
+    font-family: 'Circular Std', sans-serif ;
+    border: none;
+    background-color: #F7F8FA;
+    width: 70%;
+    height: 3rem;
+    border-radius: 5px;
+}
+
+    &__main-container-block {
+        margin-left: 8rem;
+    }
+    &__secondary-container {
+        width: 50%;
+    }
+    &__secondary-image {
+        width: 80%;
+        height: 30rem;
+    }
+}
