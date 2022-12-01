@@ -1,15 +1,12 @@
 import "./Complete.scss";
 import headerLogo from "../../Assets/Images/bench-logo-vector.svg";
 import demoImg from "../../Assets/Images/Reporting.png";
+import Progressbar from "../../Components/ProgressBar/Progressbar";
 
 const Complete = () => {
   return (
     <div className="complete-page">
-      <div className="progress-bar">
-        <div className="progress-bar__step1"></div>
-        <div className="progress-bar__step2"></div>
-        <div className="progress-bar__step3"></div>
-      </div>
+      <Progressbar />
       <div className="complete-page-main">
         <div className="complete-page--left">
           <div className="header__logo-wrapper">
