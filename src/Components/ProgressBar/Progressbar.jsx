@@ -1,14 +1,49 @@
+import React from "react";
 import "./Progressbar.scss";
+import { ProgressBar, Step } from "react-step-progress-bar";
 
-const Progressbar = () => {
+const Progressbar = ({ page }) => {
+  var stepPercentage = 0;
+  if (page === "pageone") {
+    stepPercentage = 0;
+  } else if (page === "pagetwo") {
+    stepPercentage = 50;
+  } else if (page === "pagethree") {
+    stepPercentage = 100;
+  } else {
+    stepPercentage = 0;
+  }
+
   return (
-    <div className="progress-wrapper">
-      <div className="progress-bar">
-        <div className="progress-bar__step1"></div>
-        <div className="progress-bar__step2"></div>
-        <div className="progress-bar__step3"></div>
-      </div>
-    </div>
+    <ProgressBar percent={stepPercentage}>
+      <Step>
+        {({ accomplished, index }) => (
+          <div
+            className={`indexedStep ${accomplished ? "accomplished" : null}`}
+          >
+            {index + 1}
+          </div>
+        )}
+      </Step>
+      <Step>
+        {({ accomplished, index }) => (
+          <div
+            className={`indexedStep ${accomplished ? "accomplished" : null}`}
+          >
+            {index + 1}
+          </div>
+        )}
+      </Step>
+      <Step>
+        {({ accomplished, index }) => (
+          <div
+            className={`indexedStep ${accomplished ? "accomplished" : null}`}
+          >
+            {index + 1}
+          </div>
+        )}
+      </Step>
+    </ProgressBar>
   );
 };
 

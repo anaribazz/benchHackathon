@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import SignIn from "./Pages/SignIn/SignIn";
+import Complete from "./Pages/Complete/Complete";
 import Book from "./Pages/Book/Book";
 
 function App() {
