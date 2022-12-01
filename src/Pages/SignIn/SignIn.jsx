@@ -1,9 +1,13 @@
 import "./SignIn.scss";
+import InfoPage from "../InfoPage/InfoPage";
 import avatar from '../../Assets/Images/ceoAvatar.png';
 
 function SignIn() {
   return (
     <div className="SignIn">
+        <InfoPage />
+        <div className="SignIn__main-container">
+
       <div className="SignIn__primary-block">
         <div className="SignIn__form-block">
           <h1 className="SignIn__primary-text">
@@ -68,6 +72,7 @@ function SignIn() {
             <img  className='SignIn__avatar' src={avatar} alt='avatar'/>
         </div>
       </div>
+        </div>
     </div>
   );
 }

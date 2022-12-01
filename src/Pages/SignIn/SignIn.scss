@@ -3,8 +3,13 @@
 
 .SignIn {
     display: flex;
+    flex-direction: column;
     font-family:'Circular Std', sans-serif ;
     margin-top: 2rem;
+
+    &__main-container {
+        display: flex;
+    }
 
     &__primary-block {
         width: 50%;
