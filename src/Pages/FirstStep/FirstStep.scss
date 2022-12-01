@@ -1,0 +1,79 @@
+.FirstStep {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    &__main-container {
+        width: 50%;
+        
+    }
+    &__main-logo {
+        height: 2rem;
+    }
+    &__block {
+        display: flex;
+        flex-direction: row;
+        margin-top: 3rem;
+    }
+    &__main-title {
+       font-family: 'Circular Medium Std', sans-serif;
+       padding-top: 2rem;
+       padding-bottom: 2rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 30px;
+        font-size: 26px;
+        width: 80%;
+    }
+
+    &__container-form {
+        display: flex;
+        flex-direction: column;
+}
+&__title {
+    font-family: 'Circular Std', sans-serif ;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-top: 1rem;
+}
+&__label {
+    font-family: 'Circular Std', sans-serif ;
+    color: #E4E6E9;
+    padding-bottom: 4px;
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+}
+
+&__form-input {
+    font-family: 'Circular Std', sans-serif ;
+    border: none;
+    background-color: #F7F8FA;
+    width: 70%;
+    height: 3rem;
+    border-radius: 5px;
+
+}
+
+    &__main-container-block {
+        margin-left: 8rem;
+    }
+    &__secondary-container {
+        width: 50%;
+    }
+    &__secondary-image {
+        width: 80%;
+        height: 30rem;
+        padding-bottom: 2rem;
+    }
+
+    select {
+        background:#eff0f3;
+        border: 1px solid #E4E6E9;
+        padding-left: 1rem;
+       
+            color: #9b9da3;
+      
+    }
+}
