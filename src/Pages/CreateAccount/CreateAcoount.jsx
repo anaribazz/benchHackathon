@@ -48,6 +48,7 @@ export default function CreateAccount() {
                 className={`create-acc-form__input${err}`}
                 type="text"
                 name="fname"
+                value="John"
                 placeholder="John"
               />
               <label className="create-acc-form__label">LAST NAME</label>
@@ -56,6 +57,7 @@ export default function CreateAccount() {
                 type="text"
                 name="lname"
                 placeholder="Doe"
+                value="Doe"
               />
               <label className="create-acc-form__label">EMAIL</label>
               <input
@@ -63,11 +65,12 @@ export default function CreateAccount() {
                 type="text"
                 name="email"
                 placeholder="johndoe@gmail.com"
+                value="johndoe@gmail.com"
               />
               <label className="create-acc-form__label">PASSWORD</label>
               <input
                 className={`create-acc-form__input${err}`}
-                type="text"
+                type="password"
                 name="password"
               />
             </div>

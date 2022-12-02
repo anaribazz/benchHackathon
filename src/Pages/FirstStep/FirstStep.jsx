@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 function FirstStep() {
   return (
     <div className="FirstStep">
-      <Progressbar />
+      <Progressbar page="pageone" />
       <div className="FirstStep__block">
         <div className="FirstStep__main-container">
           <div className="FirstStep__main-container-block">
@@ -93,14 +93,10 @@ function FirstStep() {
         </div>
       </div>
 
-      <Link to="/book" className="create-btn">
-        <div className="create-btn__text" type="submit">
+      <Link to="/book" className="step-btn">
+        <div className="step-btn__text" type="submit">
           NEXT
-          <img
-            className="create-btn__arrow"
-            src={arrowRight}
-            alt="arrow-right"
-          />
+          <img className="step-btn__arrow" src={arrowRight} alt="arrow-right" />
         </div>
       </Link>
     </div>

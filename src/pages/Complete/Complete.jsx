@@ -27,9 +27,9 @@ const Complete = () => {
         </div>
         <div className="complete-page--right">
           <p className="value__statement">
-            Based on our projections, you could potentially save up to
-            "placeholderamount" of tax reduction based on your company monthly
-            revenue and size
+            WOW! From our predictions, you could potentially save an average of
+            <p className="number">$1,615.49</p>
+            of tax reduction based on your company monthly revenue and size
           </p>
           <img
             className="complete-page-img"

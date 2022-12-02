@@ -1,7 +1,6 @@
 @use "src/Style/_variables.scss" as *;
 @use "src/Style/_font.scss" as *;
 
-
 .book-page {
   padding: 2rem 0;
   margin: 0 auto;
@@ -36,11 +35,11 @@
   width: 100%;
   font-family: "Circular", sans-serif;
   padding-top: 2rem;
-&__fields {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-}
+  &__fields {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
   &__label {
     padding-bottom: 0.5rem;
   }
@@ -54,6 +53,7 @@
     border-radius: 0.3125rem;
     padding-left: 2rem;
     outline: none;
+    margin-bottom: 1.5rem;
     &--err {
       font-family: "Circular", sans-serif;
       font-size: 1.2rem;
@@ -63,15 +63,16 @@
       padding-left: 2rem;
       border: 0.0625rem solid red;
       outline: none;
+      margin-bottom: 1.5rem;
     }
   }
 }
 
 .book-image {
-width: 50%;
-display: flex;
-justify-content: center;
-align-items: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .image {
   width: 400px;
